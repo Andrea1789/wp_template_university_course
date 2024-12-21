@@ -1,0 +1,44 @@
+# Ignore everything in wp-content
+wp-content/*
+
+# Allow themes folder but ignore everything inside it first
+!wp-content/themes/
+wp-content/themes/*
+
+# Allow only your custom theme folder
+!wp-content/themes/fictional-university-theme/
+
+# Exclude specific files/folders in your custom theme
+wp-content/themes/fictional-university-theme/node_modules/
+wp-content/themes/fictional-university-theme/bundled-assets/
+wp-content/themes/fictional-university-theme/.env
+wp-content/themes/fictional-university-theme/package-lock.json
+wp-content/themes/fictional-university-theme/webpack.config.js
+wp-content/themes/fictional-university-theme/*.log
+
+# Ignore plugins folder but keep must-use plugins if any
+wp-content/plugins/
+!wp-content/mu-plugins/
+
+# Ignore uploads folder
+wp-content/uploads/
+
+# Ignore upgrade folder
+wp-content/upgrade/
+
+# Ignore cache folder
+wp-content/cache/
+
+# Ignore backup files
+*.sql
+*.sql.gz
+*.zip
+*.tar.gz
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+.vscode/
+.env
